@@ -1,0 +1,27 @@
+{
+  "name": "stopwatch",
+  "version": "1.0.0",
+  "description": "A simple stopwatch for desktop",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "build": {
+    "icon": "/home/erick/Desktop/labs/electron/stopWatch/build/icons/",
+    "productName": "stopwatch",
+    "linux": {
+      "target": [
+        "AppImage",
+        "snap"
+        ]
+      }
+  },
+  "author": "Érick",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "electron": "^28.2.1",
+    "electron-builder": "^24.9.1"
+  }
+}
